@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Submitted Data</h1>
+            <a href="/" class="back-home">Back to Home</a>
+
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Submissions:</h2>
+            {% if submissions %}
+                <ul>
+                    {% for submission in submissions %}
+                        <li>
+                            <strong>Name:</strong> {{ submission.name }} <br>
+                            <strong>Email:</strong> {{ submission.email }} <br>
+                            <strong>Message:</strong> {{ submission.message }} <br>
+                            <strong>Submitted at:</strong> {{ submission.time }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No submissions yet!</p>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>

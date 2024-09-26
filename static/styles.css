@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column;
+    justify-content: space-between; /* Space between header, main, and footer */
+    height: 100vh; /* Full height to use flex */
+}
+
+header {
+    background-color: #152851d0;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    flex: 1; /* Allow main to grow and take available space */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.form-container {
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border: 1px solid #3f5396; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    width: 300px; /* Set a fixed width for the form */
+}
+
+label {
+    display: block; /* Makes each label take up a full line */
+    margin: 10px 0 5px; /* Space between label and input */
+}
+
+input, textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Space inside input fields */
+    margin: 5px 0 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+button {
+    padding: 10px 20px; /* Space inside the button */
+    color: white; /* Text color */
+    background-color: #007bff; /* Button color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+footer {
+    background-color: #152851d0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.back-home {
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    margin-top: 10px; /* Add some space above */
+    display: block; /* Make the link a block element */
+    text-align: center; /* Center align the link */
+}
+
+.back-home:hover {
+    color: #007bff; /* Change link color on hover */
+}

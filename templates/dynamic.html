@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dynamic Content</h1>
+            <a href="/" class="back-home">Back to Home</a>
+
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Current Date and Time: {{ time }}</h2>
+            <h3>Random Quote: "{{ quote }}"</h3>
+        </section>
+    </main>
+</body>
+</html>
